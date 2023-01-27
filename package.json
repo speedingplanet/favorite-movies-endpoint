@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "json-server": "json-server --watch data/db.json",
-    "start": "node ./www"
+    "start": "node ./server/www"
   },
   "keywords": [],
   "author": "",

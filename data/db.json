@@ -5,6 +5,12 @@
       "year": 1999,
       "rating": 5,
       "id": 1
+    },
+    {
+      "title": "Casablanca",
+      "year": 1942,
+      "rating": 5,
+      "id": 2
     }
   ],
   "users": [
@@ -13,16 +19,24 @@
       "userid": "pax",
       "email": "johnpaxton@gmail.com",
       "displayName": "John Paxton",
-      "movies": [1],
-      "friends": [2]
+      "movies": [
+        1
+      ],
+      "friends": [
+        2
+      ]
     },
     {
       "id": 2,
       "userid": "ginny",
       "email": "virgina-spataro@pluralsight.com",
       "displayName": "Virgina \"Ginny\" Spataro",
-      "movies": [1],
-      "friends": [1]
+      "movies": [
+        1
+      ],
+      "friends": [
+        1
+      ]
     }
   ],
   "comments": [

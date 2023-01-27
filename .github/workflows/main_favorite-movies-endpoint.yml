@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v1
         with:
-          node-version: "18.x"
+          node-version: '18.x'
 
       - name: npm install, build, and test
         run: |
@@ -30,7 +30,7 @@ jobs:
       - name: Zip Artifact
         run: |
           mkdir -p dist
-          zip -rq dist/release.zip node_modules data public package*
+          zip -rq dist/release.zip node_modules data public server package*
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -42,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: "Production"
+      name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -54,11 +54,11 @@ jobs:
       - name: Unzip Artifact
         run: unzip -q release.zip
 
-      - name: "Deploy to Azure Web App"
+      - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: "favorite-movies-endpoint"
-          slot-name: "Production"
+          app-name: 'favorite-movies-endpoint'
+          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2349E5A90C2B43B8A80338583820DBEB }}
           package: .

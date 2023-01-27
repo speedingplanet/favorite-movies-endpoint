@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const router = jsonServer.router('data/db.json');
+const router = jsonServer.router('./data/db.json');
 const middlewares = jsonServer.defaults();
 app.use(middlewares);
 app.use(router);
