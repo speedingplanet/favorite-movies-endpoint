@@ -1,0 +1,36 @@
+{
+  "movies": [
+    {
+      "title": "The Matrix",
+      "year": 1999,
+      "rating": 5,
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "userid": "pax",
+      "email": "johnpaxton@gmail.com",
+      "displayName": "John Paxton",
+      "movies": [1],
+      "friends": [2]
+    },
+    {
+      "id": 2,
+      "userid": "ginny",
+      "email": "virgina-spataro@pluralsight.com",
+      "displayName": "Virgina \"Ginny\" Spataro",
+      "movies": [1],
+      "friends": [1]
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "movieId": 1,
+      "userId": 1,
+      "text": "Mind-bending use of the color green"
+    }
+  ]
+}
